@@ -1,0 +1,11 @@
+[Unit]
+Description=Ghost systemd service for blog: <%= name %>
+# Documentation=add documentation link here
+
+[Service]
+Type=notify
+NotifyAccess=main
+WorkingDirectory=<%= dir %>
+User=<%= user %>
+Environment="NODE_ENV=<%= environment %>"
+ExecStart=<%= ghost_exec_path %> run
