@@ -32,7 +32,8 @@ const builtin = {
                 json: true
             }
         ]
-    }
+    },
+    empty: {}
 };
 
 module.exports = function setupEnv(typeOrDefinition, dir) {

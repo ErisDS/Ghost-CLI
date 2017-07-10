@@ -38,6 +38,11 @@ module.exports = class AcceptanceTest {
         this.cliPath = path.join(process.cwd(), 'bin', 'ghost');
     }
 
+    /**
+     * Type of setup to do
+     *
+     * @param {string} type - can be 'full' or 'empty'
+     */
     setup(type) {
         this.cleanupDir = env(type, this.dir).cleanup;
     }
